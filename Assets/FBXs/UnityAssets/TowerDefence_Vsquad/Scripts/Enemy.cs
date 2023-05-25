@@ -70,6 +70,22 @@ public class Enemy : MonoBehaviour {
         EnemyTarget.GetComponent<CastleController>().Get_Damage(Creature_Damage);
     }
 
+    public void Get_Damage(int damage)
+    {
+        HP -= damage;
+        if (HP < 0)
+        {
+            HP = 0;
+        }
+
+        Debug.Log("Enemy HP: " + HP);
+
+        if (HP == 0)
+            Destroy(gameObject);
+
+    }
+
+
     void Update () 
 	{
 

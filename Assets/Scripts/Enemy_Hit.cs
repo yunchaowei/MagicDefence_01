@@ -32,7 +32,7 @@ public class Enemy_Hit : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("On Castle Enter");
+        //Debug.Log("On Castle Enter");
         if (other.tag == "Castle")
         {
             EnemyTarget.GetComponent<CastleController>().Get_Damage(Creature_Damage);

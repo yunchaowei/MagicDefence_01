@@ -22,7 +22,7 @@ public class Staff_Controller : MonoBehaviour
     void Update()
     {
         float moveDistance = Mathf.Abs(transform.position.y - previousPosition.y); // 计算玩家在Y轴上的移动距离
-        Debug.Log("moveDistance " + moveDistance);
+        //Debug.Log("moveDistance " + moveDistance);
         if (moveDistance > detect_Dis && Time.time - previousShootTime > 1.0f) // 如果移动距离超过50cm并且距离上一次发射火球的时间超过1秒
         {
             ShootFireball(); // 发射火球

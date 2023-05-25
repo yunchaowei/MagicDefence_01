@@ -5409,6 +5409,7 @@ MonoBehaviour:
   Player: {fileID: 1440896347}
   Fireballprefab: {fileID: 568874186345467501, guid: 66f6e846cf52a8d428f314a899138da7, type: 3}
   Spawn_Point: {fileID: 686538268}
+  detect_Dis: 0.5
 --- !u!1 &1497522838
 GameObject:
   m_ObjectHideFlags: 0
@@ -8497,6 +8498,14 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 18753451968099817, guid: 026460d1eee99a5409d83c00f4d8a185, type: 3}
+      propertyPath: HP
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 18753451968099817, guid: 026460d1eee99a5409d83c00f4d8a185, type: 3}
+      propertyPath: Speed
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 18753451968099817, guid: 026460d1eee99a5409d83c00f4d8a185, type: 3}
       propertyPath: target
       value: 
       objectReference: {fileID: 543450653310040314}
@@ -8518,7 +8527,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 127271875647475015, guid: 026460d1eee99a5409d83c00f4d8a185, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 83.9
+      value: 25.7
       objectReference: {fileID: 0}
     - target: {fileID: 127271875647475015, guid: 026460d1eee99a5409d83c00f4d8a185, type: 3}
       propertyPath: m_LocalRotation.w
